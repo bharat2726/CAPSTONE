@@ -1,0 +1,94 @@
+<%- include('layouts/header'); -%>
+<link rel="stylesheet" href="css/style.css">
+    <!--HEADER end-->
+    <div id="pageintro" class="hoc clear">
+        <article>
+          <h3 class="heading">Accommodations</h3>
+          <footer>
+            <ul class="nospace inline pushright">
+              <li><a class="btn" href="#mainContent">Learn More</a></li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+</div>
+
+<!-- <div id="mainblock" class="bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');">
+  <section id="splitfifty" class="hoc container clear">
+    <div class="sectiontitle">
+      <p class="heading underline font-x2">Student Checklist</p>
+    </div>
+    <div class="bgded clear" style="background-image:url('images/demo/backgrounds/03.png');">
+      <article>
+        <h6 class="heading font-x2">First Advice</h6>
+        <p>The following list contains the basic required documents to get along with your process:
+          <ul>
+              <li><a href="https://startright.scotiabank.com/student-gic.html" target="_blank">GIC Account Activation</a></li>
+              <li><a href="https://www.canada.ca/en/employment-social-development/services/sin.html" target="_blank">SIN</a></li>
+              <li><a href="https://www.ontario.ca/page/drivers-licence" target="_blank">Driver’s License</a></li>
+              <li><a href="https://www.ontario.ca/page/ontario-photo-card" target="_blank">Photo Card</a></li>
+              <li><a href="https://www.gotransit.com/en/trip-planning/presto" target="_blank">Bus Card</a></li>
+              <li><a href="https://www.grt.ca/en/fares-passes/paying-your-fare.aspx" target="_blank">Tram Card</a></li>
+              <li><a href="https://www.scotiabank.com/ca/en/personal/credit-cards.html" target="_blank">Apply for Credit Card</a></li>
+              <li><a href="https://www.rogers.com/mobility/sim-card" target="_blank">SIM Card</a></li>
+          </ul></p>
+        <footer><a class="btn" href="/">Home</a></footer>
+      </article>
+    </div>
+  </section>
+</div> -->
+
+
+
+<div id="mainContent" class="mainContent" class="bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');">
+  <div class="leftSection">
+      <div class="items">
+          <div class="product" id="iphone">
+              <img src="images/a1.jpg" alt="accommodation1"/>
+              <h2 id="name" style="font-size: 20px;">168 King St N, 1B1B</h2>
+              <p id="price" style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $200/month</p>
+              <a class="btn" href="mailto:someone@example.com">Contact Owner</a>
+          </div>
+          <div class="product" id="samsung">
+              <img src="images/a2.jpg" alt="accommodation2"/>
+              <h2 id="name" style="font-size: 20px;">172 King St N, 2B1B</h2>
+              <p id="price" style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $250/month</p>
+              <a class="btn" href="mailto:someone2@example.com">Contact Owner</a>
+          </div>
+          <div class="product" id="earphones">
+              <img src="images/a3.jpg" alt="accommodation3"/>
+              <h2 id="name" style="font-size: 20px;">162 King St N, 2B2B</h2>
+              <p id="price" style="font-size: 15px; font-family: 'Open Sans', sans-serif;"> Cost: $500/month</p>
+              <a class="btn" href="mailto:someone3@example.com">Contact Owner</a>
+          </div>
+      </div>
+  </div>
+  <!-- <div class="rightSection">
+      <div class="errors">
+          <h2>Additional Messages</h2>
+              <%
+                  if (typeof(purchase) != 'undefined')
+                  {
+              %>
+              <p> <%= purchase %> </p>
+
+              <%
+                  }
+              %>
+              
+              <% 
+              if (typeof(errors) != 'undefined')
+              {
+                  for (let error of errors)
+                  {
+              %>
+                  <p class="errors"> <%= error.msg %></p>
+              <%
+                  }
+              }
+              %>
+      </div>
+  </div> -->
+</div>
+    <!--FOOTER start-->
+<%- include('layouts/footer'); -%>

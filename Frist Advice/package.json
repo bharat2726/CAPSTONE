@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "alert": "^5.1.1",
+    "ejs": "*",
+    "express": "^4.18.1",
+    "express-session": "*",
+    "mongoose": "*"
+  },
+  "name": "first-advice",
+  "description": "Project Steps:\r - npm install express\r - SETTING UP PACKAGE.JSON FILE\r - - npm iniit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bharat2726"
+  },
+  "keywords": [
+    "First",
+    "Advice"
+  ],
+  "author": "Bharat Kumar",
+  "license": "ISC"
+}

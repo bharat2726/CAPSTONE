@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>First Advice</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    .formArea {
+        margin-left: 20px;
+        padding: 5px;
+        align-items: center;
+        font-family: 'Crimson Text', serif;
+        font-size: 20px;
+        line-height: 32px;
+        display: block;
+        margin-top: 20px;
+    }
+
+    input{
+        width: 95%;
+        padding: 15px;
+        display: inline-block;
+        border: 2px solid orange;
+        background: transparent;
+        margin-bottom:1%;
+    }
+
+    button {
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 3%;
+        background-color: orange;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 95%;
+        opacity: 0.9;
+        align-items: center;
+    }
+    h4{
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+</style>
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> 
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left">
+        <ul class="nospace">
+          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul class="nospace">
+          <li><a href="/"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+          <li><a href="/login" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="/register" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+          <li id="searchform">
+            <div>
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search term&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <h1><a href="/">First Advice</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#">Student Checklist</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="#">General FAQ's</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!--HEADER end-->
+<div class="formArea">
+    <h1 style="font-size: 45px; text-align: center; margin-top: 2%;">Sign Up</h1>
+    <form>
+        <h4>Name</h4>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <h4> E-Mail Address</h4>
+        <input type="text" id="email" type="email" pattern=".+@+.+\.com" placeholder="Enter your e-mail id" required />
+        <h4> Password</h4>
+        <input type="password" id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            placeholder="Enter your password" required />
+        <h4> Credit Card </h4>
+        <input id="creditCardNumber" type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" maxlength="19"
+            placeholder="Card Number (xxxx-xxxx-xxxx-xxxx)" required />
+        <input id="monthYear" type="tel" pattern="[A-Z]{3}/[0-9]{4}" maxlength="8" placeholder="MMM / YYYY" required />
+        <input id="cvv" type="tel" pattern="[0-9]{3}" maxlength="3" placeholder="CVV" required />
+
+        <button value="Submit" onclick="submitFun()">Submit</button>
+    </form>
+</div>
+</div>
+<!--FOOTER start-->
+<%- include('layouts/footer'); -%>

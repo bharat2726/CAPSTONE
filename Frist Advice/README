@@ -1,0 +1,12 @@
+Project Steps:
+- npm install express
+- SETTING UP PACKAGE.JSON FILE
+  - npm iniit
+- installed express
+- created pages
+
+
+Steps to run:
+- open index.js
+- open terminal
+- run node index
